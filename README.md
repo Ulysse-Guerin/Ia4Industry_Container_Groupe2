@@ -75,6 +75,8 @@ The composed image is roughly 7.2GB.
 
 When you restart the container, you will have to open a new jupyter window.
 
+To access the new token, you can press Ctrl+C and then n, you will obtain the new address when asked if you want to shut down the server.
+
 You may add any supplementary library through jupyter by running a cell with your command beginning with %. 
 
 Example: `%pip install seaborn`
