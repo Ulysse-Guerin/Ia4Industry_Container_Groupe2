@@ -66,7 +66,8 @@ To stop the container:
 docker-compose down
 
 This stops the container and cleans up any running instances of JupyterLab. You can restart it anytime with:
-docker start dev-environment
+
+`docker start dev-environment`
 
 
 ### 4.Notes 
