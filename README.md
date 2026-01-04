@@ -54,7 +54,11 @@ docker logs dev-environment | grep token
 Open the URL in your browser (use the 127.0.0.1:8888 link) to access JupyterLab. 
 All files in the code  directory, including code1.py, code2.py, and any new scripts you create, will be visible in the same environment
 
+To test that all the libraries are installed, you may try to run a cell with the command:
 
+`import torch, matplotlib,numpy, pandas, scikit-learn`
+
+If the cell runs without any errors, the installation was successful.
 
 ### 3. Stop environment
 
@@ -67,4 +71,9 @@ docker start dev-environment
 
 ### 4.Notes 
 The composed image is roughly 7.2GB.
+
 When you restart the container, you will have to open a new jupyter window.
+
+You may add any supplementary library through jupyter by running a cell with your command beginning with %. 
+
+Example: `%pip install seaborn`
