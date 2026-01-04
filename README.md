@@ -1,6 +1,6 @@
 # TP3 – Development Stack with Docker
 
-#Members: Ulysse Guérin, Titouan Gabagnou, Paul de Haro, Marc Antoine Orecchioni
+#Members: Ulysse Guérin, Titouan Gabagnou, Paul de Haro, Marc Antoine Orecchioni, Samuel Landman
 
 ## Description
 This project provides a Docker-based development stack to evaluate and plot
