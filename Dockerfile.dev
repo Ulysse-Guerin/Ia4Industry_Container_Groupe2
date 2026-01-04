@@ -1,0 +1,32 @@
+# Use TensorFlow CPU image as base (Python 3.9 compatible)
+FROM tensorflow/tensorflow:2.10.0
+
+# Prevent apt interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Upgrade pip first
+RUN python3 -m pip install --upgrade pip
+
+# Install system dependencies
+RUN apt update && apt install -y \
+    python3-dev \
+    git nano curl wget vim \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install PyTorch (CPU) using PyTorch's index
+RUN pip install --no-cache-dir \
+    torch torchvision torchaudio -f https://download.pytorch.org/whl/cpu/torch_stable.html
+
+# Install other Python packages
+RUN pip install --no-cache-dir \
+    jupyterlab ipykernel numpy pandas scikit-learn matplotlib
+
+# Set working directory
+WORKDIR /workspace
+
+# Expose JupyterLab port
+EXPOSE 8888
+
+# Default command: start JupyterLab
+CMD ["bash", "-c", "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root"]
+
