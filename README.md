@@ -18,7 +18,6 @@ The project includes:
 ## Project Structure
 
 - `code/` contains the Python scripts: code1.py, code2.py  
-- `dev-stack/` contains supporting files for development  
 - `docker-compose.yml` orchestrates the container  
 - `Dockerfile.dev` defines the development image
 
