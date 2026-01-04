@@ -49,10 +49,11 @@ From your host machine, run:
 docker-compose up -d
 
 Then get the access URL and token with:
-docker logs dev-environment | grep token
+
+`docker logs dev-environment | grep token`
 
 Open the URL in your browser (use the 127.0.0.1:8888 link) to access JupyterLab. 
-All files in the code  directory, including code1.py, code2.py, and any new scripts you create, will be visible in the same environment
+All files in the code  directory, including code1.py, code2.py, and any new scripts you create, will be visible in the same environment in the workspace directory.
 
 To test that all the libraries are installed, you may try to run a cell with the command:
 
@@ -74,8 +75,6 @@ This stops the container and cleans up any running instances of JupyterLab. You 
 The composed image is roughly 7.2GB.
 
 When you restart the container, you will have to open a new jupyter window.
-
-To access the new token, you can press Ctrl+C and then n, you will obtain the new address when asked if you want to shut down the server.
 
 You may add any supplementary library through jupyter by running a cell with your command beginning with %. 
 
