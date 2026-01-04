@@ -24,8 +24,14 @@ The project includes:
 ## Installation & Running
 
 ### 1. Build and start the container
+In the cloned repository:
 docker-compose build
 docker-compose up -d
+
+You may try the following commands if these don'work:
+docker compose build
+docker compose up -d
+
 
 
 
@@ -55,10 +61,10 @@ All files in the code  directory, including code1.py, code2.py, and any new scri
 To stop the container:
 docker-compose down
 
-
-Or:
-docker-compose up -d
 This stops the container and cleans up any running instances of JupyterLab. You can restart it anytime with:
+docker start dev-environment
+
 
 ### 4.Notes 
-The composed image is roughly 7.2GB
+The composed image is roughly 7.2GB.
+When you restart the container, you will have to open a new jupyter window.
