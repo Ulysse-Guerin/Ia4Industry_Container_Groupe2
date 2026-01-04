@@ -1,6 +1,6 @@
 # TP3 – Development Stack with Docker
 
-#Members: Ulysse Guérin, Samuel Landman, Paul de Haro, Marc Antoine Orecchioni
+#Members: Ulysse Guérin, Titouan Gabagnou, Paul de Haro, Marc Antoine Orecchioni
 
 ## Description
 This project provides a Docker-based development stack to evaluate and plot
@@ -61,3 +61,5 @@ Or:
 docker-compose up -d
 This stops the container and cleans up any running instances of JupyterLab. You can restart it anytime with:
 
+### 4.Notes 
+The composed image is roughly 7.2GB
